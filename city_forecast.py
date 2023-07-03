@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
-
+st.set_page_config(layout="wide",
+                   page_title="Meterological forecasts",
+                   page_icon="https://avatars.githubusercontent.com/u/138516174?s=400&u=8b1a12374e90f23f8e63f779d1d7cf23315dadbb&v=4")
 # List of cities for which forecasts are available
 cities = pd.read_csv('data/cities.csv')
 
